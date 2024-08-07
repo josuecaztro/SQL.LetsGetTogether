@@ -3,6 +3,9 @@ Insert the missing parts in the JOIN clause to join the
   field in both tables as the relationship between the two tables.
 
 SELECT *
-FROM Enrolments
-LEFT JOIN Students
-[insert clause here];
+FROM Enrolments AS e
+LEFT JOIN Students AS s
+ON e.StudentID = s.StudentID;
+
+
+
